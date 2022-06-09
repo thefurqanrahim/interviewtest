@@ -3,12 +3,12 @@ import React, { useState, useEffect } from "react";
 import {userData} from './UserDataObj';
 
 function App() {
-   const [first, setfirst] = useState(userData)
-const colors = ['#000', '#FB7185', '#34D399', '#F472B6', "#C084FC", "#22D3EE"];
+//    const [first, setfirst] = useState(userData)
+// const colors = ['#000', '#FB7185', '#34D399', '#F472B6', "#C084FC", "#22D3EE"];
 
-useEffect(() => {
-    setfirst([...first, colors]);
-}, [])
+// useEffect(() => {
+//     setfirst([...first, colors]);
+// }, [])
 
 
   return (
@@ -35,7 +35,7 @@ useEffect(() => {
         return (
           <div  key={ind} className=" flex justify-between items-center w-full h-[70px] rounded-xl  shadow-lg p-5 mt-2 cursor-pointer scale-75s">
             <div className="flex items-center ">
-              <h1 style={{ backgroundColor: colors[ind] }} className=" mr-5 flex justify-center items-center	 text-white w-[40px] h-[40px] rounded-[50%]  ">
+              <h1 style={{ backgroundColor: item.bgcolor }} className=" mr-5 flex justify-center items-center	 text-white w-[40px] h-[40px] rounded-[50%]  ">
                 <span >{item.first}</span>
               </h1>
               <h1>
