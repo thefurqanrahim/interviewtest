@@ -31,7 +31,7 @@ function App() {
           <hr />
         </div>
         <div className="overflow-y-auto h-[350px] mt-5 pr-2"> 
-        {first.map((item, ind) => {
+        {userData.map((item, ind) => {
         return (
           <div  key={ind} className=" flex justify-between items-center w-full h-[70px] rounded-xl  shadow-lg p-5 mt-2 cursor-pointer scale-75s">
             <div className="flex items-center ">
